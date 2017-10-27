@@ -1,0 +1,40 @@
+﻿@model FritoLay.Models.Review
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script type="text/javascript">
+
+        $(document).ready(function () {
+            $('.createReview').click(function () {
+                 $.ajax({
+                    type: 'GET',
+                    dataType: 'html',
+                    url: '@Url.Action("CreateReview")/@Model.ProductId',
+                    success: function (result) {
+                        $('#reviewadd').html(result);
+                     }
+                    });
+              });
+		});
+    </script>
+</head>
+<hr /><hr />
+<div class="well">
+    <h2>Add A New Review</h2>
+
+    @using (Html.BeginForm("CreateReview", "Product", FormMethod.Post, new { enctype = "multipart/form-data" }))
+    {
+        @Html.LabelFor(model => model.Description)
+        @Html.EditorFor(model => model.Description)
+
+        @Html.LabelFor(model => model.AuthorName)
+        @Html.EditorFor(model => model.AuthorName)
+
+        @Html.LabelFor(model => model.Rating)
+        @Html.EditorFor(model => model.Rating)
+
+        @Html.HiddenFor(model => model.ProductId)
+
+        <input type="submit" value="CreateReview" class="btn btn-default" />
+    }
+</div>

@@ -1,0 +1,10 @@
+C:\Users\amdubedy\Source\Repos\FritoLay\FritoLay\bin\Debug\netcoreapp1.1\FritoLay.deps.json
+C:\Users\amdubedy\Source\Repos\FritoLay\FritoLay\bin\Debug\netcoreapp1.1\FritoLay.runtimeconfig.json
+C:\Users\amdubedy\Source\Repos\FritoLay\FritoLay\bin\Debug\netcoreapp1.1\FritoLay.runtimeconfig.dev.json
+C:\Users\amdubedy\Source\Repos\FritoLay\FritoLay\bin\Debug\netcoreapp1.1\FritoLay.dll
+C:\Users\amdubedy\Source\Repos\FritoLay\FritoLay\obj\Debug\netcoreapp1.1\FritoLay.csprojResolveAssemblyReference.cache
+C:\Users\amdubedy\Source\Repos\FritoLay\FritoLay\obj\Debug\netcoreapp1.1\FritoLay.csproj.CoreCompileInputs.cache
+C:\Users\amdubedy\Source\Repos\FritoLay\FritoLay\obj\Debug\netcoreapp1.1\FritoLay.AssemblyInfo.cs
+C:\Users\amdubedy\Source\Repos\FritoLay\FritoLay\bin\Debug\netcoreapp1.1\FritoLay.pdb
+C:\Users\amdubedy\Source\Repos\FritoLay\FritoLay\obj\Debug\netcoreapp1.1\FritoLay.dll
+C:\Users\amdubedy\Source\Repos\FritoLay\FritoLay\obj\Debug\netcoreapp1.1\FritoLay.pdb

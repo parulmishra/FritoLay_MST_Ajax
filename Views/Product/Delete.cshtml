@@ -1,0 +1,26 @@
+﻿@model FritoLay.Models.Product
+@using System.Security.Claims
+
+@{
+    ViewData["Title"] = "Delete Product";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@if (User.Identity.IsAuthenticated)
+{
+    <h2>Are you sure you wanna delete this Product??</h2>
+    <hr />
+
+    <h3>@Html.DisplayFor(model => model.ProductName) : @Html.DisplayFor(model => model.ProductName)</h3>
+
+    @using(Html.BeginForm())
+    {
+        @Html.HiddenFor(model => model.ProductId)
+        <input type="submit" value="Delete" />
+    }
+}
+else
+{
+    <h3>@Html.ActionLink("Sign up", "SignUp", "User")</h3>
+    <h3>@Html.ActionLink("Log in", "Login", "User")</h3>
+}
+<h3>@Html.ActionLink("Back to Products", "Index")</h3>
