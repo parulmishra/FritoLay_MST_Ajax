@@ -80,7 +80,7 @@ namespace FritoLay.Tests
             testProduct.ProductName = "Test Product";
             testProduct.Cost = 15;
             testProduct.CountryOfOrigin = "India";
-
+            testProduct.Featured = false;
             // Act
             controller.Create(testProduct);
             var collection = (controller.Index() as ViewResult).ViewData.Model as List<Product>;
