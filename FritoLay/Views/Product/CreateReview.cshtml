@@ -27,19 +27,27 @@
 <div class="well">
     <h2>Add A New Review</h2>
 
-    @using (Ajax.BeginForm("CreateReview", "Product", FormMethod.Post, new { enctype = "multipart/form-data" }))
+    @using (Html.BeginForm("CreateReview", "Product", FormMethod.Post, new { enctype = "multipart/form-data" }))
     {
-        @Html.LabelFor(model => model.Description)
-        @Html.EditorFor(model => model.Description)
-
-        @Html.LabelFor(model => model.AuthorName)
-        @Html.EditorFor(model => model.AuthorName)
-
-        @Html.LabelFor(model => model.Rating)
-        @Html.EditorFor(model => model.Rating)
-
-        @Html.HiddenFor(model => model.ProductId)
-
+        <div class="row">
+             @Html.LabelFor(model => model.Description)
+             @Html.EditorFor(model => model.Description)
+        </div>
+        <br/>
+        <div class="row">
+            @Html.LabelFor(model => model.AuthorName)
+            @Html.EditorFor(model => model.AuthorName)
+         </div>
+         <br/>
+        <div class="row">
+            @Html.LabelFor(model => model.Rating)
+            @Html.EditorFor(model => model.Rating)
+         </div>
+         <br/>   
+    @Html.HiddenFor(model => model.ProductId)
+    <div class="row">
         <input type="submit" value="CreateReview" class="btn btn-default" />
+    </div>
+    <br/>
     }
 </div>
